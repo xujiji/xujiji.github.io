@@ -291,14 +291,14 @@ mv.app.fadeIn = function(){
 	var num = 0;
 	//没三秒换一次图
 	function tab(){
-		mv.ui.opacity(aLi[num],10,0);
+		mv.ui.opacity(aLi[num],5,0);
 		num = num==aLi.length-1 ? 0 : num+1 ;
-		mv.ui.opacity(aLi[num],10,100);
+		mv.ui.opacity(aLi[num],5,100);
 	}
 	function tabback(){
-		mv.ui.opacity(aLi[num],10,0);
+		mv.ui.opacity(aLi[num],5,0);
 		num = num==0 ? aLi.length-1 : num-1;
-		mv.ui.opacity(aLi[num],10,100);
+		mv.ui.opacity(aLi[num],5,100);
 	}
 	timer =setInterval(tab,3000);
 	//箭头鼠标移入，变不透明且停止定时器
